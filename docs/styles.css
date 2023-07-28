@@ -48,3 +48,7 @@
 		text-align: center;
 		clear: both;
 	}
+	a.absent {
+		color: red;
+		text-decoration: line-through;
+	}
