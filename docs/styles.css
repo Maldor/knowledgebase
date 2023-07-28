@@ -48,3 +48,7 @@
 		text-align: center;
 		clear: both;
 	}
+	header img {
+            max-width: 40%;
+            height: auto;
+            margin-right: 50%;
