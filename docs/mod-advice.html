@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+		<img src="images/cc2-header.png" alt="Logo">
+        <h1>Carrier Command 2 Modding Wiki</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Guides</a>
+		<a href="about.html">About</a>
+        <a href="https://github.com/cc2modteam/knowledgebase">Github</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+    <div class="container">
+        <section class="main-content">
+			<div>
+				<h1>Carrier Command 2 Mods</h1>
+					<p>CC2's mod system works by replacing individual files.  You cannot enable two mods if they both contain the same file (eg the same lua script, game object mesh, sound or 3d shader etc)</p>
+				<h2>CC2 Mod Capability</h2>
+				<p>Most mods are concerned with how the various control screens on the carrier work.  Some alter the various vehicle HUD camera behaviours.</p>
+				<p>A not-exhaustive snapshot of some of the things people have managed to mod include:</p>
+				<ul>
+					<li>
+						<p>Control Screens</p>
+						<ul>
+							<li>Extra waypoint options</li>
+							<li>Vehicle loadout options/limit (eg, change how hardpoints can be used)</li>
+							<li>Adding extra control screens to the carrier/units</li>
+						</ul>
+					</li>
+						<li>
+							<p>Vehicle HUD Camera Views</p>
+							<ul>
+								<li>Show more details about targets in camera views</li>
+								<li>Fuel-remaining timers</li>
+								<li>More target lock options</li>
+							</ul>
+					</li>
+						<li>
+						<p>Vehicle options</p>
+							<ul>
+								<li>Add/move unit hardpoints</li>
+							</ul>
+					</li>
+					<li>
+						<p>Weapon physics</p>
+						<ul>
+							<li>Naval gunfire spread</li>
+							<li>Missile/Torpedo speeds</li>
+						</ul>
+					</li>
+					<li>
+						<p>Visuals/Audio</p>
+						<ul>
+							<li>Skins</li>
+							<li>New 3d models for units</li>
+							<li>New weapon sound effects</li>
+						</ul>
+					</li>
+				</ul>
+				<h2>Limitations</h2>
+				<p>Things that we cannot do (yet) that often are requested.</p>
+					<ul>
+						<li>Change weapon ammo capacity</li>
+						<li>Change weapon damage</li>
+						<li>Change unit hitpoints/fuel capacity</li>
+						<li>Create new units</li>
+						<li>Land aircraft on islands / barges / needlefish</li>
+					</ul>
+				<p>Not all screen scripts have access to the same native functions, eg:</p>
+				<table role="table">
+					<thead>
+						<tr>
+							<th>script</th>
+							<th>enter vehicles</th>
+							<th>play sounds</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>screen_vehicle_control.lua</td>
+							<td>yes</td>
+							<td>no</td>
+						</tr>
+						<tr>
+							<td>screen_radar.lua</td>
+							<td>no</td>
+							<td>yes</td>
+						</tr>
+						<tr>
+							<td>screen_weapons_anti_air.lua</td>
+							<td>no</td>
+							<td>yes</td>
+						</tr>
+						<tr>
+							<td>vehicle_hud.lua</td>
+							<td>no/sorta</td>
+							<td>no</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Explore Different Categories</h2>
+            <ul class="category-list">
+                <li>
+                    <h3>Structure</h3>
+                    <a href="./file_structure/file_structure.html">Structure of files and folders</a>
+                </li>
+                <li>
+                    <h3>Guides</h3>
+                    <p></p>
+                    <a class="absent" href="#">Guide 1</a>
+					<a class="absent" href="#">Guide 2</a>
+					<a class="absent" href="#">Guide 3</a>
+					<a class="absent" href="#">Guide 4</a>
+                </li>
+                <li>
+                    <h3>Steam Workshop</h3>
+                    <a href="https://steamcommunity.com/app/1489630/workshop/">View Mods on the Steam Workshop</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p> Maldor &copy; 2023. All rights reserved.</p>
+		<p> Carrier Command 2 is &copy; MicroProse and Developed by Geometa </p>
+    </footer>
+</body>
+</html>
